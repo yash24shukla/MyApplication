@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/bluebulb"
+        android:layout_width="386dp"
+        android:layout_height="408dp"
+        android:layout_marginLeft="-18dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bulbblue"
+        app:layout_constraintHorizontal_bias="0.852" />
+
+    <ImageView
+        android:id="@+id/greenbulb"
+        android:layout_width="386dp"
+        android:layout_height="408dp"
+        android:layout_marginLeft="-18dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/bulbgreen" />
+
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="blueTapped"
+        android:text="blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/greenButton"
+        app:layout_constraintTop_toBottomOf="@+id/bluebulb"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginTop="8dp"
+        android:onClick="greenTapped"
+        android:text="green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluebulb"
+        app:layout_constraintVertical_bias="0.513" />
+</android.support.constraint.ConstraintLayout>
